@@ -1,6 +1,9 @@
-from .base import BaseAppConfig
-from .dev import DevConfig
-from .prod import ProdConfig
+from . import plugins_loader
+
+BaseAppConfig = plugins_loader.config_service.base.BaseAppConfig
+DevConfig     = plugins_loader.config_service.dev.DevConfig
+ProdConfig    = plugins_loader.config_service.prod.ProdConfig
+
 import yaml
 from pathlib import Path
 
@@ -25,5 +28,7 @@ def get_config() -> BaseAppConfig:
     
 if __name__ == "__main__":
     print(get_config())
+
+    
 
     
