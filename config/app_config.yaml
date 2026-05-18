@@ -1,0 +1,18 @@
+app:
+    name : Agent de Gestion Sociale
+    version : "0.0.1"
+    stage : development
+    authors :
+        - name : Biswadeep Tewari
+          email : tewari765@gmail.com
+          github : https://github.com/RajTewari01
+    description : 
+        en : |
+            Agent de Gestion Sociale is an open-source project developed using Python with the goal of running seamlessly on both local machines and cloud environments. Its primary mission is to provide free and accessible social automation tools for everyone, helping simplify digital and administrative tasks through intelligent automation.
+        es : |
+            Agent de Gestion Sociale es un proyecto de código abierto desarrollado con Python con el objetivo de funcionar sin problemas tanto en entornos locales como en la nube. Su misión principal es proporcionar herramientas gratuitas y accesibles de automatización social para todas las personas, ayudando a simplificar tareas digitales y administrativas mediante automatización inteligente.
+        fr : |
+            Agent de Gestion Sociale est un projet Open Source développé en Python avec pour objectif de fonctionner aussi bien sur des machines locales que dans des environnements cloud. Sa mission principale est de fournir gratuitement à tous des outils d’automatisation sociale accessibles, afin de simplifier les tâches numériques et administratives grâce à une automatisation intelligente.
+    
+
+      

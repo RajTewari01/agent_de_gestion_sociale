@@ -15,5 +15,6 @@ plugins_loader : ModuleType = _plugins_module.PluginLoader().bootstrap()
 get_config = plugins_loader.config_service.loader.get_config
 BaseAppConfig = plugins_loader.config_service.base.BaseAppConfig
 
+
 CONFIG : BaseAppConfig = get_config()
-__all__ : List = ["CONFIG", "plugins_loader"]
+__all__ : List = ["CONFIG", "plugins_loader", "get_config", "BaseAppConfig", "DevConfig", "ProdConfig"]

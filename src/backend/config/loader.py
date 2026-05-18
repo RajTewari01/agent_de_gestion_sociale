@@ -1,8 +1,8 @@
 from . import plugins_loader
-
 BaseAppConfig = plugins_loader.config_service.base.BaseAppConfig
 DevConfig     = plugins_loader.config_service.dev.DevConfig
 ProdConfig    = plugins_loader.config_service.prod.ProdConfig
+
 
 import yaml
 from pathlib import Path
