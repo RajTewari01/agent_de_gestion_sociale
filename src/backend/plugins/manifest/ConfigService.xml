@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest version="1.0">
+    <plugin id="config_service">
+        <metadata>
+            <name>config_service</name>
+            <version>1.0.0</version>
+            <author>Raj Tewari</author>
+            <description>
+                config service providing path management, API key configuration,
+                and exception capture utilities.
+            </description>
+        </metadata>
+        <runtime>
+            <enabled>true</enabled>
+            <priority>1</priority>
+        </runtime>
+        <!-- Modules this service exposes -->
+        <modules>
+            <module name="config">src.backend.config</module>
+            <module name="base">src.backend.config.base</module>
+            <module name="dev">src.backend.config.dev</module>
+            <module name="prod">src.backend.config.prod</module>
+            <module name="loader">src.backend.config.loader</module>
+        </modules>
+        <!-- Third-party packages needed (for validation / documentation) -->
+        <dependencies>
+            <package version=">=2.0.0">pydantic</package>
+            <package version=">=6.0.0">yaml</package>
+        </dependencies>
+    </plugin>
+</manifest>

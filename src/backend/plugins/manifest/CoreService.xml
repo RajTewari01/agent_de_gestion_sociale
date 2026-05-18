@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest version="1.0">
+    <plugin id="core_service">
+        <metadata>
+            <name>CoreService</name>
+            <version>1.0.0</version>
+            <author> Raj Tewari </author>
+            <description>
+                Core service providing path management, API key configuration,
+                and exception capture utilities.
+            </description>
+        </metadata>
+        <runtime>
+            <enabled>true</enabled>
+            <priority>1</priority>
+        </runtime>
+        <!-- Modules this service exposes -->
+        <modules>
+            <module name="paths">src.backend.core.paths</module>
+            <module name="api_config">src.backend.core.api_config</module>
+            <module name="capture_exceptions">src.backend.core.capture_exceptions</module>
+            <module name="regex_utility">src.backend.core.regex_utility</module>
+        </modules>
+        <!-- Third-party packages needed (for validation / documentation) -->
+        <dependencies>
+            <package version=">=2.0.0">pydantic</package>
+            <package version=">=2.0.0">pydantic-settings</package>
+        </dependencies>
+    </plugin>
+</manifest>
